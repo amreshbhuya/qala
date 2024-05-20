@@ -1,0 +1,257 @@
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:linear-gradient(to right, #292828, #1b1b1b);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    
+}
+
+#search {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #181818;
+    color: #fff;
+    width:79%;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex: 1;
+}
+#artist{
+    color:#1DB954;
+    
+    
+}
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background: linear-gradient(to right, #000000, #1d1d1d);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #282828;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li.active, .sidebar li:hover {
+    background-color: #12b833;
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Main styles */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Player styles */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cover img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.info {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+/* Progress styles */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #444;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress {
+    background: #1DB954;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+/* Playlist styles */
+.playlist {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.playlist li {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+    
+}
+
+.playlist li.active, .playlist li:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    background-color: #18a813;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+/* CSS for the active state of the favorite button */
+#addToFavorites.active {
+    color: #f60039; /* Change to your desired active color */
+    transform: scale(1.5); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+.x{
+
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(62, 62, 62);
+    margin-top: 2rem;
+    
+}
+.x:hover{
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(103, 103, 103, 0.3); /* Deeper shadow on hover */
+}
+/* Container for the iframes */
+.iframe-container {
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Increased space between iframes */
+    justify-content: center; /* Center alignment */
+    padding: 40px;
+    background-color: #000000; /* Light teal background color */
+  }
+  
+  /* Style for each iframe */
+  iframe {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px; /* Maximum width for larger screens */
+    height: 300px;
+    object-fit: cover;
+    border: none;
+    box-shadow: 0 4px 8px rgba(114, 114, 114, 0.2); /* Add shadow for a floating effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    background-color: transparent;
+  }
+  
+  /* Hover effect */
+  iframe:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }
+  
+  
+  
+footer i{
+    padding: 20px;
+    text-shadow: 10px 10px 10px rgba(128, 121, 121, 0.562);
+    
+
+}
+footer i:hover{
+
+    transform: scale(1.5); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+footer{
+    background-color: #000000;
+    padding:30px;
+    text-align: center;
+    font-size: 20px;
+    gap: 20px;
+    
+    
+}
+  @media (max-width: 768px) {
+    iframe {
+      max-width: 100%; /* Ensure iframes are responsive on smaller screens */
+      background-color: #000000;
+    }
+  }

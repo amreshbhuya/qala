@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" type="image/x-icon" />
+    <title>Musical world 🎻</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Musical world 🎻</h1>
+        <input type="text" id="search" placeholder="Search for songs...">
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Playlists 🎶</h2>
+            <ul id="playlist-list">
+                <a href="https://amreshbhuya.github.io/login/">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+                
+                <a href="https://amreshbhuya.github.io/index/"  rel="noopener noreferrer" ><li data-playlist="all" class="active"><i class="fas fa-music"></i>  All Songs</li></a>
+                <li data-playlist="favorites"><i class="fas fa-heart"></i>  Favorites</li>
+                <li><i class="fas fa-plus"></i> Create Playlist</li>
+                <a href="https://amreshbhuya.github.io/qala/"  rel="noopener noreferrer"><img class="x"  src="qala.png" alt="Album Cover"></a>
+                <a href="https://amreshbhuya.github.io/party/"  rel="noopener noreferrer"><img class="x"  src="party.png" alt="Album Cover"></a>
+                <a href="https://amreshbhuya.github.io/bhajan/"  rel="noopener noreferrer"><img class="x"  src="bhajan.png" alt="Album Cover"></a>
+                <a href="https://amreshbhuya.github.io/Krishna/"  rel="noopener noreferrer"><img class="x"  src="kri4.png" alt="Album Cover"></a>
+                <a href="https://amreshbhuya.github.io/piya/"  rel="noopener noreferrer"><img class="x"  src="O Re Piya.png" alt="Album Cover"></a>
+                <a href="https://amreshbhuya.github.io/gangu/"  rel="noopener noreferrer"><img class="x"  src="alia.png" alt="Album Cover"></a>
+             <a href="https://amreshbhuya.github.io/RamLeela/"  rel="noopener noreferrer"><img class="x"  src="RamLeela.png" alt="Album Cover"></a>
+             <a href="https://amreshbhuya.github.io/love/"  rel="noopener noreferrer"><img class="x"  src="love.png" alt="Album Cover"></a>
+            
+            </ul> 
+        </div>
+        <div class="main">
+            <div class="player">
+                <div class="controls">
+                    
+<button id="shuffle"><i class="fas fa-random"></i></button>
+<button id="prev"><i class="fas fa-step-backward"></i></button>
+<button id="play"><i class="fas fa-play"></i></button>
+<button id="pause" style="display: none;"><i class="fas fa-pause"></i></button>
+<button id="next"><i class="fas fa-step-forward"></i></button>
+<button id="repeat"><i class="fas fa-sync-alt"></i></button>
+<button id="addToFavorites"><i class="fas fa-heart"></i></button>
+
+
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div class="info">
+                    <h2 id="title">Song Title</h2>
+                    <h3 id="artist">Artist Name</h3>
+                </div>
+                <div class="cover">
+                    <img id="cover" src="alia.png" alt="Album Cover">
+                </div>
+                <div class="progress-container">
+                    <div id="progress"></div>
+                </div>
+
+                <div>
+
+                     
+
+                </div>
+                
+
+            </div>
+            <div class="playlist">
+                <ul id="playlist">
+                    <!-- Songs will be dynamically loaded here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script5.js">
+
+        
+    </script>
+    <div class="iframe-container">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1a8w8nlIyIhE2W1HIayKnl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<footer class="pt2-pb2">
+        
+            
+    <p>&copy; 2024 Amresh Bhuyan. All rights reserved.</p>
+       <p>Developed & Design by Amresh Bhuyan</p>
+<div>
+<!-- Email -->
+<a href="mailto:amreshbhuyanone@gmail.com">
+    <i class="fas fa-envelope" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+</a>
+
+<!-- Phone -->
+<a href="tel:+917854998757">
+    <i class="fas fa-phone-alt" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/message/TCEZDFRBT7GQE1" target="_blank">
+    <i class="fab fa-whatsapp" style="font-size: 40px; color: #f3f3f3; margin-right: 10px; "></i>
+</a>
+
+<!-- Instagram Link -->
+<a href="https://www.instagram.com/amreshbhuyan/?hl=es-la" target="_blank">
+    <i class="fab fa-instagram" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+</a>
+
+<!-- LinkedIn Link -->
+<a href="https://www.linkedin.com/in/amresh-bhuyan-aa0442298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    <i class="fab fa-linkedin" style="font-size: 40px; color: #ededed;"></i>
+</a>
+</div>
+</footer>
+
+</body>
+</html>
+
